@@ -92,10 +92,54 @@
    
 .navigation a:hover{
 	box-shadow: inset 100px 0 0 0 #1abc9c;
-	transition: ease-out 0.5s;
+	transition: ease-out 0.4s;
 	border-radius: 5px;
 }
 
+.row {
+	width: 90%;
+	padding: 20px;
+	margin: 100px auto;
+	background: #ddd;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.column {
+	width: 25%;
+    margin: 0px 30px;
+}
+
+.image {
+	background: rgb(245, 242, 242);
+	transition: 1s;
+	border: #000;
+	border-radius: 2%;
+}
+.image:hover{
+	transform: scale(1.05);
+	z-index: 2;
+	
+}
+
+h3 {
+	font-size: 14px;
+	letter-spacing: initial;
+	margin-bottom: 5px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.price {
+	letter-spacing: initial;
+	color: rgb(29, 30, 31);
+	font-family: Roboto;
+	text-align: center;
+	margin-top: 10px;
+}
 /*
 	Footer
 */
@@ -110,7 +154,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
 }
 
 
