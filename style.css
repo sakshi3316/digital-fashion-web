@@ -15,6 +15,7 @@
 	background: #333;
 }
 
+
 @font-face {
     font-family: "simplifica";
     src: url("font/SIMPLIFICA/SIMPLIFICA\ Typeface.ttf");
@@ -67,10 +68,9 @@
 	/* background-color: rgba(48, 60, 109, 0.25); */
 	/* background-image: linear-gradient(rgba(48, 60, 109, 0.6), transparent); */
 	background-color: #fff;
-	position:sticky;
 	font-family: 'audrey-bold';
 	font-size: 18px;
-	/* position: fixed; */
+	position: relative;
   	z-index:2;
 	border-bottom: 0.5px dotted brown;
 }
