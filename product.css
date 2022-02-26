@@ -6,30 +6,25 @@
 
 
 .products {
-	display:grid;
-	grid-gap: 10px;
-	grid-template-columns: 80px 200px auto 40px;
-	width: 90%;
-	padding: 20px;
-	margin: 100px auto;
-/*	background: #ddd;*/
+	display: flex;  
+  	flex-wrap: wrap;
 }
 
 .column {
-	width: 25%;
-    margin: 0px 30px;
+	width: 22%;
+    margin: 15px 15px;
+    /* grid-template-columns: 2fr 2fr 2fr 1fr; */
+
 }
 
 .image {
-	background: rgb(245, 242, 242);
-	transition: 1s;
 	border: #000;
-	border-radius: 2%;
+	background-color: #f2f2f2;
 }
-.image:hover{
-	transform: scale(1.05);
+.image img:hover{
+	transition: 1s;
+	transform: scale(1.03);
 	z-index: 2;
-	
 }
 
 h3 {
@@ -37,7 +32,7 @@ h3 {
 	letter-spacing: initial;
 	margin-bottom: 5px;
 	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'mont_regular';;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -45,7 +40,7 @@ h3 {
 .price {
 	letter-spacing: initial;
 	color: rgb(29, 30, 31);
-	font-family: Roboto;
+	font-family: 'mont_regular';;
 	text-align: center;
 	margin-top: 10px;
 }

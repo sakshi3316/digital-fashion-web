@@ -12,7 +12,6 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	min-height: 100vh;
-	font-family: 'Segoe UI';
 	background: #333;
 }
 
@@ -20,6 +19,41 @@
     font-family: "simplifica";
     src: url("font/SIMPLIFICA/SIMPLIFICA\ Typeface.ttf");
 }
+
+@font-face {
+    font-family: "audrey";
+    src: url("font/Audrey-1.0/Audrey-Normal.otf");
+}
+
+@font-face {
+    font-family: "audrey-bold";
+    src: url("font/Audrey-1.0/Audrey-Bold.otf");
+}
+
+@font-face {
+    font-family: "audrey-normal-oblique";
+    src: url("font/Audrey-1.0/Audrey-NormalOblique.otf");
+}
+
+@font-face {
+    font-family: "audrey-med-oblique";
+    src: url("font/Audrey-1.0/Audrey-MediumOblique.otf");
+}
+
+@font-face {
+	font-family: "type_heading_custom";
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src: url("font/mont/FontsFree-Net-Mont-Bold.ttf")
+  }
+
+  @font-face {
+	font-family: "mont_regular";
+
+	src: url("font/mont/FontsFree-Net-Mont1.ttf");
+  }
+
 
 
 
@@ -29,14 +63,16 @@
 
 .header {
 	width: 100%;
-	height: 80px;
+	height: 80;
 	/* background-color: rgba(48, 60, 109, 0.25); */
-	background-image: linear-gradient(rgba(48, 60, 109, 0.6), transparent);
-	position:relative;
-	font-family: 'Source Sans Pro';
-	font-size: 22px;
-	position: fixed;
+	/* background-image: linear-gradient(rgba(48, 60, 109, 0.6), transparent); */
+	background-color: #fff;
+	position:sticky;
+	font-family: 'audrey-bold';
+	font-size: 18px;
+	/* position: fixed; */
   	z-index:2;
+	border-bottom: 0.5px dotted brown;
 }
 
 .inner_header {
@@ -54,7 +90,7 @@
 
 .logo_container h1 {	
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .logo_container h1 img{
@@ -70,7 +106,7 @@
 {
 	display: inline-flex;
 	list-style: none;
-	color: #fff;
+	color: black;
 }
 
 .menu-bar ul li
@@ -83,12 +119,12 @@
 .menu-bar ul li a
 {
 	text-decoration: none;
-	color: #fff;
+	color: black;
 }
 
 .menu-bar ul li:hover
 {
-	background: rgba(48, 60, 109, 0.25);;
+	background: #fff;
 	border-radius: 3px;
 }
 
@@ -100,7 +136,7 @@
 {
 	display: block;
 	position: absolute;
-	background: rgba(48, 60, 109, 0.25);;
+	background: #fff;
 	margin-top: 15px;
 	margin-left: -15px;
 }
@@ -128,16 +164,8 @@
 
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover
 {
-	color: #b2ff00;
+	color: #229289;
 }
-
-
-	
-
-
-
-/*
-
 
 
 
@@ -188,143 +216,6 @@
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
-/* 
-	Home Page image Slide Show
-*/
-
-/* Slideshow container */
-.home-slideshow-container {	
-  position: relative;
-  margin: 100;
-}
-
-/* Hide the images by default */
-.home-slide {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-   
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 60px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-  
-/* 
-	Home Page Sample Products
-*/
-
-.row {
-	width: 90%;
-	padding: 20px;
-	margin: 100px auto;
-	background: #ddd;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.column {
-	width: 25%;
-    margin: 0px 30px;
-}
-
-.image {
-	background: rgb(245, 242, 242);
-	transition: 1s;
-	border: #000;
-	border-radius: 2%;
-}
-.image:hover{
-	transform: scale(1.05);
-	z-index: 2;
-	
-}
-
-h3 {
-	font-size: 14px;
-	letter-spacing: initial;
-	margin-bottom: 5px;
-	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	margin-top: 20px;
-}
-
-.price {
-	letter-spacing: initial;
-	color: rgb(29, 30, 31);
-	font-family: Roboto;
-	text-align: center;
-	margin-top: 10px;
-}
 /*
 	Footer
 */
@@ -332,7 +223,7 @@ h3 {
 .footer {
 	position: relative;
 	width: 100%;
-	background: #3586ff;
+	background: rgb(243, 236, 236);
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
@@ -354,7 +245,7 @@ h3 {
 
 .footer .social a {
 	font-size: 2em;
-	color: #fff;
+	color: #000;
 	margin: 0 10px;
 	display: inline-block;
 }
@@ -378,7 +269,7 @@ h3 {
 
 .footer ul li a {
 	font-size: 1.2em;
-	color: #fff;
+	color: #000;
 	margin: 0 10px;
 	display: inline-block;
 	text-decoration: none;
@@ -399,7 +290,7 @@ h3 {
 	margin-top: 15px;
 	text-align: center;
 	font-size: 13px;
-	color: #D8D4D5;
+	color: #000;
 }
 
 
