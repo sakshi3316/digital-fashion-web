@@ -110,55 +110,22 @@ h	* {
   to {opacity: 1}
 }
 
-  
+
+
 /* 
-	Home Page Sample Products
+	Product Demo
 */
 
-.row {
-	width: 90%;
-	padding: 20px;
-	margin: 100px auto;
-	background: #ddd;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.product-demo-header {
+    text-align: center;
+    margin-top: 40px;
 }
 
-.column {
-	width: 25%;
-    margin: 0px 30px;
+.product-demo-header h4{
+    font-family: 'mont_regular';
+    font-size: 20px;
 }
 
-.image {
-	background: rgb(245, 242, 242);
-	transition: 1s;
-	border: #000;
-	border-radius: 2%;
-}
-.image:hover{
-	transform: scale(1.05);
-	z-index: 2;
-	
-}
-
-h3 {
-	font-size: 14px;
-	letter-spacing: initial;
-	margin-bottom: 5px;
-	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-	margin-top: 20px;
-}
-
-.price {
-	letter-spacing: initial;
-	color: rgb(29, 30, 31);
-	font-family: Roboto;
-	text-align: center;
-	margin-top: 10px;
-}
 
 
 /* 
@@ -167,22 +134,21 @@ h3 {
 
 .about {
     display: flex;
-}
-
-.about .about_img {
-    float: left;
-    width: 60%;
+    overflow:hidden;
+    height: 700px;
 }
 /* .about .about_img img {
     size: 80%;
 } */
 .about .about_text{
-    float: right;
-    width: 30%;
+    position: relative;
+    right: 0;
+    width: 40%;
     font-family: 'audrey-normal-oblique';
     text-align: center;
     vertical-align: center;
     margin: 0 5%;
+    background-color: white;
 }
 
 .about .about_text h4{

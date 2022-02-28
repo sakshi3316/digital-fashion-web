@@ -63,6 +63,8 @@
 */
 
 .header {
+	display: inherit;
+    align-items: center;
 	width: 100%;
 	height: 80;
 	/* background-color: rgba(48, 60, 109, 0.25); */
@@ -76,10 +78,11 @@
 }
 
 .inner_header {
-	width: 1000px;
+	width: 100%;
 	height: 100%;
 	display: flex;
-	margin: 0 auto;
+	padding-left: 50px;
+	vertical-align: middle;
 }
 
 .logo_container {
@@ -90,11 +93,10 @@
 
 .logo_container h1 {	
 	display: table-cell;
-	vertical-align: bottom;
 }
 
 .logo_container h1 img{
-	max-width: 50%;	
+	max-width: 33%;
 }
 
 .menu-bar
@@ -217,6 +219,15 @@
 
 
 /*
+	Login Button
+*/
+
+#login_button {
+	/* background-color: green; */
+}
+
+
+/*
 	Footer
 */
 
@@ -264,6 +275,8 @@
 	flex-wrap: wrap;
 
 	list-style: none;
+	font-family: 'audrey';
+	letter-spacing: -.1em;
 	font-size: 18px;
 }
 
