@@ -127,7 +127,22 @@ h	* {
 }
 
 
+/* 
+	Video
+*/
+.mobile {
+  display: flex;
+  align-items: center;
+}
 
+.vid_txt{
+  width: 60%;
+  font-size: 50px;
+  text-align: center;
+}
+.video video{
+  float: right;
+}
 /* 
 	About Us
 */
@@ -135,33 +150,36 @@ h	* {
 .about {
     display: flex;
     overflow:hidden;
-    height: 700px;
+    height: 500px;
+    background-color: rgb(204, 202, 202);
 }
 /* .about .about_img img {
     size: 80%;
 } */
+
+.about .about_img{
+  display: flex;
+  overflow:hidden;
+  width: 50%;
+  background-image: url(Image/151244763_953780792094673_5684183680207371036_n.jpg);
+  background-size: 50%;
+  background-attachment: fixed;
+}
 .about .about_text{
-    position: relative;
-    right: 0;
-    width: 40%;
+    float: right;
+    width: 500px;
     font-family: 'audrey-normal-oblique';
-    text-align: center;
-    vertical-align: center;
-    margin: 0 5%;
-    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about .about_text h4{
-    line-height: 300px;
+    line-height: 200px;
     font-size: 70px;
     font-family: 'audrey-normal-oblique';
-    text-align: center;
-    vertical-align: center;
 }
 
 .about .about_text .about_msg{
     font-size: 25px;
     font-family: 'audrey-normal-oblique';
-    text-align: center;
-    vertical-align: center;
 }
