@@ -10,8 +10,6 @@
 
 .body {
 	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
 	min-height: 100vh;
 	background: #333;
 }
@@ -50,13 +48,15 @@
 	src: url("font/mont/FontsFree-Net-Mont-Bold.ttf")
   }
 
-  @font-face {
+@font-face {
 	font-family: "mont_regular";
-
 	src: url("font/mont/FontsFree-Net-Mont1.ttf");
-  }
+}
 
-
+@font-face {
+	font-family: "Freight Text";
+	src: url("font/FreightText-W03-Book/FreightText_W03_Book.ttf");
+}
 
 
 /*
@@ -69,8 +69,6 @@
     align-items: center;
 	width: 100%;
 	height: 80;
-	/* background-color: rgba(48, 60, 109, 0.25); */
-	/* background-image: linear-gradient(rgba(48, 60, 109, 0.6), transparent); */
 	background-color: #fff;
 	font-family: 'audrey-bold';
 	font-size: 18px;
@@ -79,11 +77,9 @@
 }
 
 .inner_header {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	padding-left: 50px;
-	vertical-align: middle;
+	align-items: center;
 }
 
 .logo_container {
@@ -235,6 +231,15 @@
 	color: white;
 }
 
+#cart_icon {
+	width: 30px;
+	margin-right: 40px;
+}
+
+#cart_icon i{
+	font-size: 25px;
+}
+
 
 /*
 	Footer
@@ -243,7 +248,8 @@
 .footer {
 	position: relative;
 	width: 100%;
-	background: rgb(243, 236, 236);
+	background: #15323a;
+	color: #fff;
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
@@ -265,7 +271,8 @@
 
 .footer .social a {
 	font-size: 2em;
-	color: #000;
+	color: inherit;
+	opacity: 0.75;
 	margin: 0 10px;
 	display: inline-block;
 }
@@ -291,7 +298,7 @@
 
 .footer ul li a {
 	font-size: 1.2em;
-	color: #000;
+	color: inherit;
 	margin: 0 10px;
 	display: inline-block;
 	text-decoration: none;
@@ -312,7 +319,8 @@
 	margin-top: 15px;
 	text-align: center;
 	font-size: 13px;
-	color: #000;
+	color: inherit;
+	opacity: 0.75;
 }
 
 
