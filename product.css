@@ -35,8 +35,6 @@
 .column {
 	width: 22%;
     margin: 15px 15px;
-    /* grid-template-columns: 2fr 2fr 2fr 1fr; */
-
 }
 
 .image {
@@ -58,7 +56,6 @@
 
 h3 {
 	font-size: 14px;
-	letter-spacing: initial;
 	margin-bottom: 5px;
 	color: #000;
 	font-family: 'mont_regular';;
@@ -67,7 +64,6 @@ h3 {
 }
 
 .price {
-	letter-spacing: initial;
 	color: rgb(29, 30, 31);
 	font-family: 'mont_regular';;
 	text-align: center;
