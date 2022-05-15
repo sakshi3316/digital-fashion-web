@@ -39,9 +39,9 @@ h	* {
 
 
 .home-slide img{
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
-  object-fit: fill;
+  /* object-fit: fill; */
 }
 
 /* Next & previous buttons */
