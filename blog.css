@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+
+.blog {
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
