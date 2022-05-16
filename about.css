@@ -100,7 +100,7 @@ body {
     background-attachment: fixed;
   } 
 
-  .vision_img{
+  .vision_img {
     padding-left: 10px;
     width: 50%;
     /* background-color: #EEE2DC;
@@ -114,7 +114,34 @@ body {
     font-weight: 1000;
   }
 
-  .vision_img h3{
+  .vision_text{
     font-family: 'Freight Text';
     font-weight: 50;
+    font-size: 20px;
+  }
+
+  .about_text {
+    padding-left: 10px;
+    /* background-color: #EEE2DC;
+    color: #AC3B61; */
+    /* background-size: 90%; */
+
+    color: black;
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Helvatica';
+    font-weight: 1000;
+  }
+
+  .about_text li{
+    font-family: 'Freight Text';
+    font-weight: 50;
+    font-size: 20px;
+    text-align: left;
+    /* list-style-type: disc; */
+  }
+  .about_text li p{
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 2px 5px #888888;
   }
